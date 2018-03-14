@@ -1,0 +1,9 @@
+Package: com.lonewolfakela.warshipgirlsplus
+Name: WarshipGirlsPlus
+Depends: mobilesubstrate
+Version: 1.2.0
+Architecture: iphoneos-arm
+Description: WarshipGirlsR tool patch
+Maintainer: lone_wolf_akela <lone_wolf_akela@icloud.com>
+Author: lone_wolf_akela <lone_wolf_akela@icloud.com>
+Section: Tweaks

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>		<string>PSGroupCell</string>
+			<key>label</key>	<string>功能开关</string>
+		</dict>
+		<dict>
+			<key>cell</key>		<string>PSSwitchCell</string>
+			<key>default</key>	<false/>
+			<key>defaults</key>	<string>com.lonewolfakela.warshipgirlsplusprefs</string>
+			<key>key</key>		<string>EnableAndroid</string>
+			<key>label</key>	<string>连接安卓服务器</string>
+		</dict>
+		<dict>
+			<key>cell</key>		<string>PSSwitchCell</string>
+			<key>default</key>	<true/>
+			<key>defaults</key>	<string>com.lonewolfakela.warshipgirlsplusprefs</string>
+			<key>key</key>		<string>AntiCensor</string>
+			<key>label</key>	<string>立绘反和谐</string>
+		</dict>
+		<dict>
+			<key>cell</key>		<string>PSGroupCell</string>
+			<key>label</key>	<string>注意：服务器设置需要重新登陆游戏生效；反和谐设置则需要将游戏从后台退出后才会生效，并且您可能需要进行一次文件校验以下载缺失的大破立绘文件。</string>
+		</dict>
+		<dict>
+			<key>cell</key>		<string>PSGroupCell</string>
+			<key>label</key>	<string> </string>
+		</dict>
+		<dict>
+			<key>cell</key>		<string>PSButtonCell</string>
+			<key>label</key>	<string>由 破天者-孤狼 制作</string> 
+		</dict>
+	</array>
+	<key>title</key>	<string>WarshipGirlsPlus</string>
+</dict>
+</plist>

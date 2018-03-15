@@ -22,9 +22,9 @@ static void loadPrefs()
 	else if([key isEqualToString:@"crazy"])
 	{
 		if(AntiCensor)
-			return  [NSNumber numberWithInt : 1];
+			return  @(YES);
 		else
-			return  [NSNumber numberWithInt : 0];
+			return  @(NO);
 	}
 	else
 	{

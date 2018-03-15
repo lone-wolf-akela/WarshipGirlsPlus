@@ -16,7 +16,7 @@ static void loadPrefs()
 {
 	if([key isEqualToString:@"CHECK_RES_MANIFEST"])
 	{
-		//return	[NSNumber numberWithInt : 1];
+		//return	@1;
 		return %orig;
 	}
 	else if([key isEqualToString:@"crazy"])

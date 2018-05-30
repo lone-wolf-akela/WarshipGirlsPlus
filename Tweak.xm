@@ -1,5 +1,6 @@
 static BOOL EnableAndroid = NO;
 static BOOL AntiCensor = YES;
+static BOOL NotificationFix = YES;
 static void loadPrefs()
 {
     NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.lonewolfakela.warshipgirlsplusprefs.plist"];
@@ -7,6 +8,7 @@ static void loadPrefs()
     {
         EnableAndroid = ( [prefs objectForKey:@"EnableAndroid"] ? [[prefs objectForKey:@"EnableAndroid"] boolValue] : EnableAndroid );
 	AntiCensor = ( [prefs objectForKey:@"AntiCensor"] ? [[prefs objectForKey:@"AntiCensor"] boolValue] : AntiCensor );
+	NotificationFix = ( [prefs objectForKey:@"NotificationFix"] ? [[prefs objectForKey:@"NotificationFix"] boolValue] : NotificationFix );
     }
     [prefs release];
 }
@@ -63,6 +65,26 @@ static void loadPrefs()
 		return %orig;
 	}
 }
+%end
+
+%hook UIApplication
+- (void) cancelAllLocalNotifications
+{
+	if(NotificationFix)
+	{
+		//do nothing
+	}
+	else
+	{
+		%orig;
+	}
+}
+
+/*- (void) cancelLocalNotification: (id)arg
+{
+	//do nothing
+}*/
+
 %end
 
 %ctor

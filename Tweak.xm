@@ -16,17 +16,12 @@ static void loadPrefs()
 %hook NSUserDefaults
 - (id) objectForKey:(id)key
 {
-	if([key isEqualToString:@"CHECK_RES_MANIFEST"])
-	{
-		//return	[NSNumber numberWithInt : 1];
-		return %orig;
-	}
-	else if([key isEqualToString:@"crazy"])
+	if([key isEqualToString:@"crazy"])
 	{
 		if(AntiCensor)
 			return  [NSNumber numberWithInt : 1];
 		else
-			return  [NSNumber numberWithInt : 0];
+			return  %orig;
 	}
 	else
 	{
@@ -48,8 +43,8 @@ static void loadPrefs()
 	{		
 		if ([urlStr containsString:@"version.jr.moefantasy.com"]) 
 		{
-			urlStr = [urlStr stringByReplacingOccurrencesOfString:@"/100020/"
-		                             withString:@"/100021/"];
+			urlStr = [urlStr stringByReplacingOccurrencesOfString:@"/100111/"
+		                             withString:@"/100011/"];
 			urlStr = [urlStr stringByReplacingOccurrencesOfString:@"channel=100020"
 		                             withString:@"channel=100021"];
 			NSURL *newurl = [NSURL URLWithString:urlStr];

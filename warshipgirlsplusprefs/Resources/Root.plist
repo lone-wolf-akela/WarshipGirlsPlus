@@ -43,7 +43,7 @@
 		</dict>
 		<dict>
 			<key>cell</key>		<string>PSGroupCell</string>
-			<key>label</key>	<string>Version 1.3.0</string>
+			<key>label</key>	<string>Version 1.4.0</string>
 		</dict>
 	</array>
 	<key>title</key>	<string>WarshipGirlsPlus</string>

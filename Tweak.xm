@@ -45,8 +45,8 @@ static void loadPrefs()
 		{
 			urlStr = [urlStr stringByReplacingOccurrencesOfString:@"/100111/"
 		                             withString:@"/100011/"];
-			urlStr = [urlStr stringByReplacingOccurrencesOfString:@"channel=100020"
-		                             withString:@"channel=100021"];
+			urlStr = [urlStr stringByReplacingOccurrencesOfString:@"channel=100111"
+		                             withString:@"channel=100011"];
 			NSURL *newurl = [NSURL URLWithString:urlStr];
 			return %orig(newurl, policy, interval);
 		}		

@@ -13,7 +13,7 @@
 			<key>default</key>	<false/>
 			<key>defaults</key>	<string>com.lonewolfakela.warshipgirlsplusprefs</string>
 			<key>key</key>		<string>EnableAndroid</string>
-			<key>label</key>	<string>连接安卓服务器</string>
+			<key>label</key>	<string>连接安卓服务器(当前版本此功能暂时无法正常工作)</string>
 		</dict>
 		<dict>
 			<key>cell</key>		<string>PSSwitchCell</string>
@@ -43,7 +43,7 @@
 		</dict>
 		<dict>
 			<key>cell</key>		<string>PSGroupCell</string>
-			<key>label</key>	<string>Version 1.4.0</string>
+			<key>label</key>	<string>Version 1.4.2</string>
 		</dict>
 	</array>
 	<key>title</key>	<string>WarshipGirlsPlus</string>

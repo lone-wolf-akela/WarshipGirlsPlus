@@ -1,1 +1,1 @@
-{ Filter = { Bundles = ( "com.wsg.anoumiomamoru" ); }; }
+{ Filter = { Bundles = ( "com.wsg.anoumiomamoru", "com.moefantasy.zhanjianshaonv" ); }; }
